@@ -3,18 +3,19 @@ import './navbar.css';
 const NavBar = () => {
   return (
     <>
-      <div className="navbar flex flex-col relative mb-5 ">
+      <div className="navbar flex flex-col relative mb-5 gap-3 ">
         <div className="logo-title flex justify-between w-full  ">
           <p>
             <i className="bi bi-list text-3xl"></i>
           </p>
-          <p className="text-2xl">NueWear</p>
+          <div className="flex gap-3">
+            <img src="logo-2.png" alt="" className="w-10 h-10" />
+            <p className="text-4xl font-serif">NueWear</p>
+          </div>
           <div className="about flex gap-10 text-[18px]">
             <p>About</p>
             <p>FAQs</p>
-            <p>
-              <i className="bi bi-person-circle absolute text-3xl -top-1 "></i>
-            </p>
+            <i className="bi bi-person-circle flex text-3xl  "></i>
           </div>
         </div>
         <div className=" flex gap-10 items-center w-full  ">
